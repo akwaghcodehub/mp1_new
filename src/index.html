@@ -1,13 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Wagh Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Akshay Wagh</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="profile-picture">
+                    <img src="./assets/1758516135235.jpeg" alt="Akshay Wagh Profile Picture">
+                </div>
+                <h1 class="hero-title">Akshay Wagh</h1>
+                <p class="hero-subtitle">Cloud System Engineer</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openModal('contact-modal')">Get In Touch</button>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/akwaghcodehub" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/akshaywagh" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Cloud Engineer with a strong foundation in cloud infrastructure, automation, and data-driven solutions. With experience at MicroStrategy and Accenture, I've led AWS/Azure migrations, automated deployments, and optimized costs, while ensuring high system reliability and security.</p>
+                    <p>I am currently pursuing a Master's in Information Management at UIUC and interning as a Data and Alignment Consultant at Stratcom, where I work on data analytics projects. I also hold certifications in AWS Solutions Architect, Azure Fundamentals, and Azure Developer. Alongside cloud engineering, I've gained experience in data analytics, machine learning projects, and dashboard development, giving me a well-rounded perspective on modern cloud and data ecosystems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="projects" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-slide active">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/fms.png" alt="FMS">
+                            </div>
+                            <div class="project-info">
+                                <h3>Flight Booking System</h3>
+                                <p>A database-backed web application for flight booking and administration, built with Spring Boot and focused on robust database design.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Spring Boot </span>
+                                    <span class="tag">Java</span>
+                                    <span class="tag">H2 Database </span>
+                                    <span class="tag">Thymeleaf </span>
+                                    <span class="tag">Maven </span>
+                                    <span class="tag">Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/androidapp.png" alt="Mobile Banking App">
+                            </div>
+                            <div class="project-info">
+                                <h3>E-Wallet Android Application</h3>
+                                <p>Developed a native Android E-Wallet app for secure peer-to-peer cashless transactions, featuring fund management, money transfers, and transaction history, all supported by a PHP backend.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">Android SDK</span>
+                                    <span class="tag">Android Studio </span>
+                                    <span class="tag">XML </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/data.png" alt="fmcg">
+                            </div>
+                            <div class="project-info">
+                                <h3>Fast-Moving Consumer Goods Data Analysis</h3>
+                                <p>Built analytics pipeline on sales, promotions, and inventory data to uncover sales drivers, optimize promotions, and improve demand forecasts in the FMCG sector.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">pandas</span>
+                                    <span class="tag">Numpy</span>
+                                    <span class="tag">SQL</span>
+                                    <span class="tag">Machine Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-prev" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn carousel-next" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-content">
+                <div class="skills-column">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <ul>
+                        <li>HTML5 & CSS3/SCSS</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Responsive Design</li>
+                        <li>CSS Animations</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <ul>
+                        <li>Node.js & Express</li>
+                        <li>Python & Django</li>
+                        <li>RESTful APIs</li>
+                        <li>Spring Boot</li>
+                        <li>Database Design</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Docker & Kubernetes</li>
+                        <li>AWS & Cloud Services</li>
+                        <li>MySQL & PostgreSQL</li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="video-section">
+                <h3>About the Site</h3>
+                <div class="video-container">
+                    <video controls>
+                        <source src="./assets/mp1_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact-section">
+        <div class="contact-video-background">
+            <video autoplay muted loop playsinline>
+                <source src="./assets/emb_video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>akshay.uiuc@email.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 217-637-3948</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Urbana, IL</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="openModal('contact-modal')">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Currently exploring Cloud, Data & AI. Open to collaborations.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/akwaghcodehub" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/akshaywagh" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('contact-modal')">&times;</span>
+            <h3>Contact Me</h3>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
